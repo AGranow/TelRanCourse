@@ -1,0 +1,2 @@
+operations_package=com.company.consumer.operation
+operations=LowerCaseOperation,UpperCaseOperation,ReverseOperation,
