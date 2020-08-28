@@ -2,8 +2,6 @@ package com.company;
 
 import com.company.consumer.IStringOperation;
 
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
@@ -20,9 +18,11 @@ public class mapProperty {
         props.load(new FileReader("config.config.props"));
         String operationPackage = props.getProperty("operations_package");
         String operationNames = props.getProperty("operations");
-
+map.put(operationNames.split(","), Class.forName().getConstructor().newInstance());
         return null;
     }
+
+
 
 
     public mapProperty() throws IOException {
